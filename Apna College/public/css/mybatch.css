@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== first-div started ==== */
+.first-div {
+
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f8f8fd;
+    font-weight: 700;
+}
+
+.courses {
+    font-family: 'Barlow', sans-serif;
+    color: #262626;
+    font-size: 1.313rem;
+    margin: 5rem 0rem 2rem 7rem;
+    font-weight: 700;
+}
+
+/* ==== card started ==== */
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.card::before{
+    content: 'Access until 07 Nov 2025';
+    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    padding: 0.5rem ;
+    border-radius: 4px;
+    background-color: #6674cc;
+    color: #ffffff;
+    position: relative;
+    top: 2.2rem;
+   right: 7.2rem;
+}
+.card-img{
+    max-width: 400px;
+  
+}
+
+
+
+.card>div {
+    padding: 1rem;
+    background-color: #f8f8fd;
+    width: calc(400px - 2rem);
+    line-height: 5rem;
+    color: #262626;
+}
+
+.card h2 {
+    font-size: 1.313rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+.card p {
+    color: #262626;
+    line-height: 1rem;
+
+}
+
+.card .parcent {
+    padding-top: 2rem;
+}
+
+.card .parcent h5 {
+
+    line-height: 1rem;
+}
+
+.card .parcent>div {
+    background-color: #6674cc;
+    width: 90%;
+
+    height: 0.5rem;
+}
+
+.card button {
+    font-weight: 600;
+    padding: 0.8rem 3.5rem;
+    background: #6674cc;
+    color: #ffffff;
+    font-size: 0.875rem;
+    border: none;
+
+}
+@media (max-width:600px) {
+
+    .courses {
+        font-size: 1rem;
+    margin: 3rem 0rem 1rem 2rem;
+   
+}
+
+}

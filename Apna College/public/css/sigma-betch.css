@@ -1,0 +1,755 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* ==== first-div started ==== */
+.first-div {
+    padding: 3rem 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    line-height: 4rem;
+
+
+}
+
+.first-div .join-btn>h1 {
+    font-size: 3.125em;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.first-div .join-btn span {
+    color: #6674cc;
+}
+
+.first-div .join-btn p {
+    color: #9ea1a8;
+    font-size: 1.375em;
+    word-spacing: 0.1em;
+}
+
+.first-div .join-btn button {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #6674cc;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.125em;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.first-div .video-pic {
+    max-width: 500px;
+    position: relative;
+}
+
+.first-div .video-pic img {
+    width: 100%;
+}
+
+.first-div .video-pic video {
+    width: 78%;
+    height: 78%;
+    border-radius: 3px;
+    position: absolute;
+    top: 0.875rem;
+    left: 3.438rem;
+
+}
+
+/* === comparision-div started ==== */
+
+
+.comparision {
+    background: #f8f8fd;
+    font-family: 'Inter', sans-serif;
+    padding: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
+    gap: 2rem;
+}
+
+.comparision .heading {
+    text-align: center;
+    width: 100%;
+}
+
+.comparision .heading h1 {
+    font-size: 1.375em;
+    font-weight: 500;
+}
+
+.comparision .heading h1 span {
+    font-weight: 600;
+}
+
+.comparision .heading p {
+    font-size: 0.875em;
+    color: #6674cc;
+    font-weight: 600;
+}
+
+.comparision .ul-line {
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    line-height: 3em;
+    padding: 1rem 3rem;
+}
+
+.comparision .ul-line h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.313em;
+}
+
+.comparision .ul-line p {
+    font-size: 1.125em;
+}
+
+.comparision .ul-line h2 span {
+    font-size: 1.125em;
+    color: #6674cc;
+}
+
+.comparision .ul-line ul {
+    padding-left: 0.5rem;
+    font-size: 1em;
+    list-style: none;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.comparision .ul-line ul i {
+    font-size: 0.6em;
+    color: #6678cf;
+    font-weight: 600;
+    padding: 3px 4px;
+    border: 1px solid #6678cf;
+    border-radius: 100%;
+}
+
+.comparision .ul-line a {
+    font-size: 1.125em;
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.comparision .ul-line2 {
+
+    background-color: #ffffff;
+
+}
+
+.comparision .ul-line2 a {
+
+    background-color: #6674cc;
+
+}
+
+.comparision .ul-line2 span {
+
+    color: #6674cc;
+    font-weight: 600;
+}
+
+.comparision .ul-line2 ul i {
+    font-size: 0.6em;
+    color: #57af50;
+    padding: 3px 4px;
+    border: 1px solid #57af50;
+    border-radius: 100%;
+}
+
+
+
+/* ==== second-div started ==== */
+
+.second-div {
+    background-color: #6674cc;
+    padding: 4.5em 1em;
+    width: calc(100% - 2em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: #ffffff;
+
+}
+
+.second-div h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.125em;
+}
+
+.second-div h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.813em;
+
+}
+
+.second-div span {
+    color: #ffeb3b;
+
+}
+
+.second-div p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125em;
+
+}
+
+.second-div button {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    padding: 1em 2em;
+    border-radius: 10px;
+    font-size: 1.125em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+/* ==== third-div started ==== */
+
+
+.third-div {
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.third-div h2 {
+    font-size: 1.313em;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 2em;
+}
+
+.third-div>div {
+    width: 90%;
+    font-size: 1.125em;
+    line-height: 3em;
+    margin-bottom: 1rem;
+}
+
+.third-div>div ul {
+
+    list-style: none;
+}
+
+.third-div ul li {
+    margin-top: 1em;
+    padding: 1em 2em;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f8f8fd;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.third-div ul li span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.third-div ul li span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p {
+    display: none;
+}
+
+.show>.p {
+    display: block;
+}
+
+
+
+
+.show span i {
+    transform: rotate(180deg);
+}
+
+.p {
+    font-weight: 400;
+    color: #262626;
+    opacity: 0.8;
+}
+
+/* ==== fourth-div started ==== */
+
+.fourth-div .first-div {
+    text-align: start;
+    line-height: 6em;
+    font-size: 1.313;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.fourth-div .first-div ul {
+    list-style: none;
+    font-size: 1.125em;
+    padding-left: 2em;
+    line-height: 2em;
+}
+
+.fourth-div .first-div ul i {
+    color: green;
+    font-size: 1.125;
+}
+
+
+.first-div .video-pic img {
+    width: 100%;
+}
+
+.fourth-div .first-div .video-pic video {
+    width: 80%;
+    height: 44%;
+    border-radius: 3px;
+    position: absolute;
+    top: 0.938rem;
+    left: 3.125rem;
+
+}
+
+.fourth-div .first-div .video-pic h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.375em;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+.fa-heart {
+    color: #e81224;
+}
+
+.fa-star {
+    color: #ffc83d;
+}
+
+/* ==== Library-div started ==== */
+
+
+.Library {
+    position: relative;
+    line-height: 3rem;
+    padding: 6rem 5rem 1rem 5rem;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.Library::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    height: 13rem;
+    left: 5px;
+    top: -100px;
+    width: 15rem;
+    border-radius: 100%;
+    background: #ffc107;
+}
+
+.Library .Library-div {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-evenly;
+}
+
+.Library .Library-div .data {
+    line-height: 7rem;
+    width: 40%;
+}
+
+.data span {
+    color: #ffc107;
+}
+
+.Library .Library-div>div:nth-child(2) {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Library .Library-div .data p {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.125em;
+}
+
+.Library .Library-div .data h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.813em;
+}
+
+.Library-div>div>img {
+    width: 80%;
+}
+
+.Library .Library-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    width: 90%;
+
+}
+
+.Library .Library-img img {
+    width: 10%;
+}
+
+.Library .btn-div {
+    padding: 2rem;
+    margin-top: 2em;
+}
+
+.Library .btn-div button {
+    font-size: 1.135em;
+    padding: 1em 3em;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+
+/* ==== fifth-div started ==== */
+
+.fifth-div {
+    line-height: 2rem;
+    font-size: 1.125em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem 5rem 6rem 5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.fifth-div i {
+    color: #6674cc;
+    font-size: 2.125em;
+    margin-bottom: 1rem;
+}
+
+.fifth-div div p {
+    color: #6674cc;
+    font-weight: 600;
+    margin-top: 1rem;
+    line-height: 0.5rem;
+}
+
+.fifth-div div {
+    max-width: 350px;
+
+}
+
+.fifth-div div h1 {
+    margin-bottom: 2rem;
+    font-size: 1.313em;
+    font-family: 'Barlow', sans-serif;
+}
+
+.fifth-div div span {
+
+    font-weight: 600;
+}
+
+/* ==== six-div started ==== */
+
+.six-div {
+
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.six-div .img {
+    padding-left: 4rem;
+    display: flex;
+    width: calc(100% - 4rem);
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem 0;
+
+}
+
+.six-div .img img {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+}
+
+.six-div .img p {
+    color: #6674cc;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
+.six-div .img h3 {
+    font-size: 1.313em;
+    font-family: 'Barlow', sans-serif;
+}
+
+.six-div .company {
+    font-size: 1.125em;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.six-div .company img {
+    width: 3.125em;
+
+}
+
+.six-div .company>div:nth-child(1) img {
+    width: 5.313em;
+
+}
+
+/* ==== seven-div started ==== */
+
+.seven-div {
+    padding: 4em 0;
+    background: #f8f8fd;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5rem;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+.seven-div>h1 {
+    font-size: 3.125em;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+.seven-div>div {
+    width: 40%;
+}
+
+.seven-div p {
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 2em;
+    padding: 1em;
+}
+
+.seven-div .deatils-course div h2 {
+    font-size: 1.125em;
+}
+
+.deatils-course span>i {
+    font-size: 1.125em;
+    margin-left: -1em;
+    padding-left: 0.5em;
+}
+
+.seven-div .img {
+    position: relative;
+}
+
+.seven-div .img::before {
+    font-size: 0.875em;
+    content: 'START YOUR PLACEMENT JOURNEY TODAY. ';
+    position: absolute;
+    top: -2em;
+    font-weight: 600;
+    width: 75%;
+    text-align: center;
+
+}
+
+.seven-div .img img {
+    width: 80%;
+    max-height: 400px;
+}
+
+.seven-div button {
+    font-size: 1.125em;
+    padding: 1em 3em;
+    margin-top: 2.5em;
+    border: none;
+    background-color: #6674cc;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+@media (max-width:500px) {
+    /* html{
+        font-size: 12px;
+    } */
+    .six-div .company {
+        flex-direction: column;
+
+    }
+}
+
+/* ==== responsive ==== */
+@media (max-width:1051px) {
+
+    .first-div {
+        flex-direction: column;
+        gap: 3rem;
+        line-height: 3em;
+    }
+
+    .first-div .join-btn {
+        font-size: 10px;
+    }
+
+    .comparision {
+        gap: 1rem;
+    }
+
+    .comparision .ul-line,
+    .comparision .ul-line2 {
+        width: 90%;
+    }
+    .comparision {
+        padding: 5em 1em;
+    }
+
+    .comparision>div {
+        width: 100%;
+    }
+
+
+    .second-div {
+        font-size: 14px;
+    }
+
+    .third-div {
+        font-size: 13px;
+    }
+
+    .fourth-div {
+        font-size: 15px;
+    }
+
+    .fifth-div {
+        width: 100%;
+        padding: 0;
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        
+    }
+    .fifth-div div{
+        padding-left: 13vw;
+        width: 100%;
+    }
+    .fifth-div div h1 {
+        margin-bottom: 1rem;
+    }
+
+    .Library {
+        padding: 6rem 1rem 1rem 1rem;
+        font-size: 14px;
+    }
+    
+    .Library .Library-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Library .Library-div .data {
+        width: 100%;
+    }
+
+    .Library-div>div>img {
+        width: 100%;
+    }
+
+    .Library .Library-div>div:nth-child(2) {
+        width: 100%;
+    }
+
+    .Library .Library-img {
+        gap: 2rem;
+        flex-wrap: wrap;
+
+    }
+
+    .Library .Library-img img {
+        min-width: 100px;
+    }
+
+    .six-div {
+        font-size: 12px;
+    }
+
+    .six-div .company {
+        gap: 1.5rem;
+
+    }
+
+    .seven-div {
+        flex-direction: column;
+    }
+
+    .seven-div>div {
+        width: 90%;
+
+    }
+
+    .seven-div .img {
+
+        text-align: center;
+    }
+
+    .seven-div .img .img {
+        width: 100%;
+        min-height: 250px;
+    }
+}
