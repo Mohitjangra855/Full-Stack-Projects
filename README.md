@@ -8,6 +8,6 @@ express install command: npm i/install  express
 
 Go To My Linkdin Profile  
 # Idetification-of-Image-Using-CBIR-with-Keras
-# [Click me..](https://www.youtube.com/results?search_query=readme.md+file+in+github+me+linkedin+ki+link+kaise+dale+)
+# [Click me..](https://www.linkedin.com/in/mohit-kumar-8850382aa/)
 
 
