@@ -151,7 +151,6 @@ body {
 
 
 .footer {
-  /* position: relative; */
   width: 100% !important;
   background: #0a0b0c;
   min-height: 100px;
@@ -163,7 +162,7 @@ body {
 
 }
 
-.social-icon,
+
 .menu {
   position: relative;
   display: flex;
@@ -173,21 +172,11 @@ body {
   flex-wrap: wrap;
 }
 
-.social-icon__item,
+
 .menu__item {
   list-style: none;
 }
 
-.social-icon__link {
-  font-size: 2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
-.social-icon__link:hover {
-  transform: translateY(-10px);
-}
 
 .menu__link {
   font-size: 1.2rem;

@@ -1,5 +1,5 @@
 In this Website i make AirBnb website clone
-go to localhost:8080/listing and see the reaults
+go to localhost:8080 and see the reaults
 and see the project
 
 In this init folder to add some random data o for your db
