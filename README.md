@@ -2,7 +2,7 @@
 In this folder i upload full stack projects...
 
 
-Plz install express and see projects..
+Plz install express and see projects...
 #Express install command: npm i/install  express
 
 
