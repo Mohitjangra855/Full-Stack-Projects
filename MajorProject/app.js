@@ -23,7 +23,6 @@ const User = require("./models/user.js")
 const listingRouter = require("./route/listing");
 const reviewRouter = require("./route/review");
 const userRouter = require("./route/user");
-const { error } = require('console');
 
 // Middlewares...................................
 app.engine("ejs", ejsMate);
@@ -115,5 +114,5 @@ app.use((err, req, res, next) => {
     let { status = 500, message = "something went worng" } = err;
     // res.status(status).send(message);
     res.render("error.ejs", { message })
-
+ console.log(message)
 })

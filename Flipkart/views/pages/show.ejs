@@ -1,0 +1,132 @@
+<% layout("boilerplate/boilerplates.ejs") %>
+    <link rel="stylesheet" href="/css/show.css">
+    <div class="main-div mt-2 mb-2">
+        <div class="product-image">
+
+            <img src="<%= showProduct.image  %>" alt="img">
+            <div>
+                <form action="/flipkart/<%= showProduct.name %>/<%= showProduct._id  %>" method="post">
+                    <button><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</button>
+                </form>
+                <button><i class="fa-solid fa-bolt-lightning"></i>&nbsp;Buy Now</button>
+            </div>
+        </div>
+        <div class="product-info">
+            <% if(currUser && currUser.username===showProduct.seller.username){ %>
+                <div class="sellerAccessBtn d-flex justify-end align-items-end float-end gap-2" style="width: 150px;">
+                    <a href="/flipkart/<%= showProduct.name %>/<%= showProduct._id  %>/edit"
+                        class="btn btn-success ">Edit</a>
+                    <form action="/flipkart/<%= showProduct.name %>/<%= showProduct._id  %>?_method=DELETE" method="post">
+                        <button class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+                <% } %>
+                    <div class="coustom-card-body">
+                        <h4 class="coustom-card-title">
+                            <%= showProduct.company %>
+                        </h4>
+                        <h5 class="coustom-card-title">
+                            <%= showProduct.name %>
+                        </h5>
+                        <p class="green">Special price</p>
+                        <h6 class="coustom-card-price"><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;<%=
+                                showProduct.price %> <span>
+                                    <%= showProduct.price*2 %>
+                                </span>
+                                <p class="discount green"></p>
+                        </h6>
+                        <h6 class="coustom-card-price">
+                            <i>Seller: <%= showProduct.seller.username %></i>
+                        </h6>
+                        <p class="p">be the first to review this product <img
+                                src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
+                                alt="img"></p>
+                        <ul>
+                            <b>Available offers</b>
+                            <li> <img
+                                    src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
+                                    alt="img"><b>Bank Offer</b>&nbsp;5% Cashback on Flipkart Axis Bank Card
+                                <span>T&C</span>
+                            </li>
+                            <li> <img
+                                    src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
+                                    alt="img"><b>Bank Offer</b>&nbsp;10% Instant Discount on BOBCARD Transactions, up to
+                                ₹1,000
+                                on orders of ₹7,500 and above <span>T&C</span></li>
+
+                            <li> <img
+                                    src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
+                                    alt="img"><b>Bank Offer</b>&nbsp;10% off on Citi-branded Credit Card EMI
+                                Transactions, up to
+                                ₹2,000 on orders of ₹5,000 and above <span>T&C</span></li>
+                            <li> <img
+                                    src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90"
+                                    alt="img"><b>Bank Offer</b>&nbsp;Get extra 20% off (price inclusive of
+                                cashback/coupon)
+                                <span>T&C</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>+21 more offers</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <ul class="Details">
+                        <p class="m-0">Product Details:</p>
+                        <% for(item of showProduct.details){ %>
+                            <li>
+                                <%= item %>
+                            </li>
+                            <% } %>
+                    </ul>
+                    <!-- create review -->
+                    <% if(currUser){ %>
+                        <div class="review">
+                            <form action="/flipkart/<%= showProduct.name  %>/<%= showProduct._id  %>/review"
+                                method="post" class="needs-validation" novalidate>
+                                <input type="range" min="1" max="5" name="review[rating]">
+                                <textarea name="review[body]" class="form-control"
+                                    placeholder="Enter product review here" required></textarea>
+                                    <button class="btn btn-outline-success">Add</button>
+                                </form>
+                                <% } %>
+                                <!-- review showing -->
+                                <% if(showProduct.review.length>0 ) { %>
+                                    <h5 class="mt-2">All Review:</h5>
+                                    <hr>
+                                    <div class="review-show">
+                                        <% for(reviews of showProduct.review){ %>
+                                            <div class="card mb-1" style="width: 17rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">
+                                                        <%= reviews.author.username %>
+                                                    </h6>
+                                                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                                                        Rated : <%= reviews.rating %> stars
+                                                    </h6>
+                                                    <p class="card-text">
+                                                        <%= reviews.body %>
+                                                    </p>
+                                                    <!-- delete review -->
+                                                    <% if(currUser && String(currUser._id) === String(reviews.author._id)){ %>
+                                                        <form
+                                                            action="/flipkart/<%= showProduct.name %>/<%= showProduct._id  %>/review/<%= reviews._id  %>?_method=DELETE"
+                                                            method="post">
+                                                            <button class="btn">Delete</button>
+                                                        </form>
+
+                                                        <% } %>
+                                                </div>
+                                            </div>
+                                            <% } %>
+                                    </div>
+                                    <% } %>
+                        </div>
+        </div>
+    </div>
+
+    <script>
+        let discount = document.querySelectorAll(".discount");
+        for (dis of discount) {
+            let randomNum = Math.floor(Math.random() * 20) + 10;
+            dis.innerText = +randomNum + "% off";
+        }
+
+    </script>
