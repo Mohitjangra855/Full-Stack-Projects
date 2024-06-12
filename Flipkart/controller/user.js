@@ -46,3 +46,38 @@ module.exports.Logout = (req, res) => {
         res.redirect("/flipkart")
     })
 }
+
+// profile page...............
+module.exports.profilePage = async (req, res) => {
+    let userid = req.user._id
+    let user = await User.findById(userid);
+
+    if (!user) {
+        req.flash("error", "Listing you requested, does not exist");
+        return res.redirect("/profile");
+        }
+        // Format the creation date as YYYY-MM-DD
+        if(user.birthdate){
+
+            const formattedDate = user.birthdate.toISOString().split('T')[0];
+        res.render("pages/profile.ejs", { user, formattedDate });
+        }
+        res.render("pages/profile.ejs", { user});
+}
+    
+    // profile edit..................
+    module.exports.profileEdit = async (req, res) => {
+        let { id } = req.params
+
+        let editUser = await User.findByIdAndUpdate(id, { ...req.body.user });
+        if(typeof req.file !== "undefined"){
+            let filename = req.file.filename;
+            let url = req.file.path;
+            editUser.image = { filename, url };
+    }
+    // console.log(req.file);
+        await editUser.save();
+        console.log(editUser);
+        req.flash("success", "Your Profile successfully updated.")
+        res.redirect("/profile");
+    }

@@ -5,11 +5,13 @@ const { isLoggedIn, validationProduct, isOwner } = require("../middleware");
 
 // controller
 const productController = require("../controller/home");
+// 
+
 
 // Home Page And New Product Create....
-router.route("/")
-    .get(wrapAsync(productController.homePageRender))
-    .post(isLoggedIn, validationProduct, wrapAsync(productController.newProduct));
+router.route("/")   
+.get(wrapAsync(productController.homePageRender))
+.post(isLoggedIn, validationProduct, wrapAsync(productController.newProduct));
 
 // New Product Page Render..........
 router.get("/new", isLoggedIn, productController.newProductPageRender)

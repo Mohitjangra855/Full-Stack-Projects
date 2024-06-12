@@ -10,6 +10,32 @@ const userSchema = new Schema({
     howAreYou: {
         type: String
     },
+    birthdate: {
+        type: Date,
+        default: Date.now()
+    },
+    address: {
+        type: String
+    },
+    country: {
+        type: String
+    },
+    state: {
+        type: String
+    },
+    pincode: {
+        type: Number
+    },
+    image: {
+        url: {
+            type: String,
+            default: "https://res.cloudinary.com/dd3px2fki/image/upload/v1718039910/flipkart_project/aubze8wdizll0eq6n40i.jpg",
+        },
+        filename: {
+            type: String,
+            default:"UserImage"
+        },
+    },
     addCart: [
         {
             type: Schema.Types.ObjectId,
