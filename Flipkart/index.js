@@ -24,14 +24,14 @@ const productRoutes = require("./routes/home");
 const reviewRoutes = require("./routes/review");
 
 ////////////////////////mongoDb///////////////////////////
-const dbUrl = 'mongodb://127.0.0.1:27017/Flipkart';
-// const dbUrl = process.env.ATLASDB_URL
+
+const dbUrl = process.env.ATLASDB_URL
 main().then(() => {
     console.log("............connected with database...............");
 })
 
 async function main() {
-    await mongoose.connect(dbUrl);
+  await mongoose.connect(dbUrl);
 }
 
 
